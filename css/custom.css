@@ -1,0 +1,252 @@
+
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+.introduction {
+  background-color: #CCE8DD;
+}
+.introduction footer.container {
+  opacity: 0.4;
+}
+.wrapper {
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  margin-top: -120px;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+#main {
+  height: 100vh;
+  min-height: 100%;
+}
+#posts {
+  margin-bottom: 50px;
+}
+#about {
+  background-color: #CCE8DD;
+  padding: 40px;
+}
+#about .photo {
+  margin: 0 auto 30px auto;
+  width: 150px;
+  height: 150px;
+  border: 1px solid #FFFFFF;
+  background-color: #FFFFFF;
+  border-radius: 999999px;
+}
+#about p.objective {
+  font-size: 24px;
+  font-family: 'Bodon';
+  margin-bottom: 15px;
+  text-align: center;
+}
+#about a {
+  color: #FFFFFF;
+  font-family: 'Brandon Grotesque';
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#about a:hover {
+  text-decoration: none;
+}
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -72px; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.navbar {
+  float: left;
+  text-align: center;
+  padding: 30px 0 20px 0; 
+  width: 100%;
+}​
+.navbar ul {
+  list-style-type: none;
+  vertical-align: middle;
+}
+.navbar ul li {
+  display: inline;
+  float: left;
+  text-transform: uppercase;
+  width: 10%;
+  padding: 5px 4%;
+  margin: 15px 0px
+}
+.navbar ul li:nth-child(3n-7) {
+  border-left: 1px solid #000;
+}
+.navbar ul li.brand {
+  color: #CCE8DD;
+  padding: 0;
+  margin: 0;
+  font-size: 34px;
+  width: 27.5%;
+  line-height: 1.4;
+  text-transform: lowercase;
+  font-family: 'Bodon';
+  font-weight: 700;
+}
+.navbar ul li > a {
+  color: #000000;
+}
+.navbar ul li > a:hover {
+  color: #CCE8DD;
+  font-weight: 700;
+  text-decoration: none;
+}
+.navbar ul li.brand > a {
+  color: #CCE8DD;
+}
+.navbar ul li.brand > a:hover {
+  font-weight: 700;
+  text-decoration: none;
+}
+footer.container, .page-wrap:after {
+  height: 42px; 
+}
+footer.container {
+  margin-top: 20px;
+  background: transparent;
+  font-size: 9.5px;
+  text-transform: uppercase;
+}
+footer.container .inset {
+  border-top: 1px solid rgba(0, 0, 0, .5);
+  margin: 0 auto;
+  padding: 20px;
+}
+footer.container .copyright {
+  float: left;
+  width: 20%;
+}
+footer.container .social {
+  float: left;
+  width: 60%;
+}
+footer.container .social ul {
+  display: table;
+  list-style-type: none;
+  margin: 0 auto;
+}
+footer.container .social ul li {
+  float: left;
+  margin-left: 10px;
+}
+footer.container .location {
+  float: left;
+  text-align: right;
+  width: 20%;
+}
+footer.container .location > .title {
+  width: 70px;
+  float: right;
+}
+footer.container .location > .title p {
+  margin-top: 3px;
+}
+#etc {
+  background-color: #CCE8DD;  
+  padding: 0 20px;
+  margin-bottom: 40px;
+}
+#etc .content {
+  display: inline-block;
+  padding: 25px 0 15px 0;
+  width: 100%;
+}
+#etc .content > p {
+  color: #98B7A9;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+#etc span.etc {
+  color: #98B7A9;
+  font-size: 38px;
+  margin-right: 10px;
+  font-family: 'Bodon';
+  text-transform: lowercase;
+  padding: 0 4px 10px 4px;
+  display: inline-block;
+   vertical-align: middle;
+
+}
+#posts .four {
+  background: #EEEEEE;
+  padding-bottom: 29%;
+  position: relative;
+  background-position:center center;
+  background-repeat:no-repeat;
+  background-size:cover; 
+}
+#posts .four:nth-child(3n+1) {
+  margin-left: 0;
+}
+#posts .four:nth-child(n+4) {
+  margin-top: 4%;
+}
+#posts .four > .overlay {  
+  background: #CCE8DD;
+  text-align:center;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: opacity .25s ease;
+  -moz-transition: opacity .25s ease;
+}
+#posts .four:hover .overlay {
+  opacity: 0.95;
+  cursor: pointer;
+}
+#posts .four > .overlay .content {
+  margin-top: 35%;
+}
+#posts .four > .overlay .title {
+  font-family: 'Adobe Caslon Pro';
+  font-size: 21px;
+}
+#posts .four > .overlay p.description {
+  font-family: 'Brandon Grotesque';
+  font-size: 11px;
+  text-transform: uppercase;
+}
+span.icon {
+  display: inline-block;
+}
+.icon {
+  width: 18px;
+  height: 18px;
+  background-size: 100%;
+}
+.icon-dribbble {
+  background-image: url(../img/dribbble.png);
+}
+.icon-instagram {
+  background-image: url(../img/instagram.png);
+}
+.icon-pinterest {
+  background-image: url(../img/pinterest.png);
+}
+.icon-twitter {
+  background-image: url(../img/twitter.png);
+}
+.icon-mail {
+  background-image: url(../img/mail.png);
+}
+.icon-map-marker {
+  background-image: url(../img/map-marker.png);
+}
+.centered {
+  text-align: center;
+}

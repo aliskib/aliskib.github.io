@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+{% include navbar.html %}
+
+{% assign posts = site.posts | where: "etc", false %}
+
+<div class="container" id="posts">
+	<div class="row">
+		{% for post in posts %}
+			<div class="four columns" style="background-image: url({{ post.image_url }}); background-position-x: 10%;">
+				<div class="overlay">
+				    <div class="content">
+				    	<span class="title">quippply</span>
+				    	<p class="description">Identity, Web</p>
+				    </div>
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+</div>

@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+{% include navbar.html %}
+
+<header id="etc">
+	<div class="container">
+		<div class="content">
+			<p><span class="etc">etc.</span> At best, a collection of recent work with no home, yet! At worst, a graveyard of killed concepts. RIP.</p>
+		</div>
+	</div>
+</header>
+
+{% assign posts = site.posts | where: "etc", true %}
+
+<div class="container" id="posts">
+	<div class="row">
+		{% for post in posts %}
+			<div class="four columns"></div>
+		{% endfor %}
+	</div>
+</div>

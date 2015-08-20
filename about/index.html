@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+{% include navbar.html %}
+
+<div class="container">
+	<div class="row">
+		<div class="twelve columns" id="about">
+
+			<div class="photo">
+				
+			</div>
+
+			<p class="objective">I am a graphic designer based in Chicago. I am a strong believer in thoughtful design. I strive to make complex ideas accessible with strong concept and beautiful execution.</p>
+
+			<div style="display: none" id="test">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat blanditiis perferendis, aspernatur omnis at nulla reiciendis nam iure porro facere eos ipsa, quidem iste pariatur! Dolore obcaecati quam, aliquid inventore. Accusantium esse laborum distinctio, nisi sed libero fuga laboriosam quasi numquam ipsum nobis voluptates, at.</p>
+			</div>
+
+			<div class="centered">
+				<a id="more">Read More &plus;</a>			
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+$(function() {
+
+  $("#more").on('click', function () {
+     // $(this).parent().siblings("dd").slideToggle(); 
+    $("#test").slideToggle();
+  });
+});
+</script>
